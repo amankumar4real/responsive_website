@@ -1,0 +1,113 @@
+.main{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+img{
+    /* background-image: ; */
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.nav{
+    background-color: rgb(31, 57, 134);
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.badge{
+    width: 40px;
+    height: 40px;
+    background-color: tomato;
+    margin: 0px auto ;
+    margin-bottom: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.a{
+    font-size: 40px;
+    color: white;
+    margin: auto auto ;
+    /* margin-bottom: 70px; */
+}
+
+.equal{
+    font-size: 40px;
+    
+    color: white;
+    margin: auto auto ;
+}
+
+.b{
+    font-size: 40px;
+    color: white;
+    margin: auto auto ;
+}
+
+@media (max-width: 900px){
+    .main{
+        grid-template-columns:auto auto;
+        grid-template-rows:  1fr 1fr 1fr;
+    }
+    .nav{
+        grid-row: 1/4;
+        display: flex;
+    }
+    img{
+        height: 230px;
+        width: 100;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        grid-template-columns: auto;
+        grid-row: auto 1fr 1fr 1fr;
+    }
+    img{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .nav{
+        width: 100%;
+        height:60px;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .badge{
+        width: 40px;
+        height: 40px;
+        background-color: tomato;
+        margin: auto ;
+        border-radius: 50%;
+    }
+    
+    .a{
+        font-size: 40px;
+        margin-right: 20%;
+        color: white;
+    }
+    
+    .equal{
+        font-size: 40px;
+        margin-right: 20%;
+        color: white;
+    }
+    
+    .b{
+        font-size: 40px;
+        color: white;
+        margin-right: 20%;
+    }
+}
